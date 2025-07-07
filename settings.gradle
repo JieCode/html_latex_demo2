@@ -1,0 +1,27 @@
+pluginManagement {
+    repositories {
+        google()
+        mavenCentral()
+        gradlePluginPortal()
+
+        maven { url "https://jitpack.io" }
+        maven { url 'https://github.com/uPhyca/stetho-realm/raw/master/maven-repo' }
+        maven { url "https://raw.github.com/laenger/maven-releases/master/releases" }
+    }
+}
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+        google()
+        mavenCentral()
+
+        maven { url "https://jitpack.io" }
+        maven { url 'https://github.com/uPhyca/stetho-realm/raw/master/maven-repo' }
+        maven { url "https://raw.github.com/laenger/maven-releases/master/releases" }
+    }
+}
+
+rootProject.name = "html_latex_demo2"
+include ':app'
+include ':flexible'
+include ':library'
